@@ -1,0 +1,9 @@
+{
+    "def function":{
+		"prefix": "dfn",
+		"body": [
+			"def $1($2):\n\t$pass",
+		],
+		"description": "structur the function"
+	},
+}

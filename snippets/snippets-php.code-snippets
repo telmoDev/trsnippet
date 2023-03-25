@@ -1,0 +1,78 @@
+{
+    "formateado de array":{
+		"prefix": "pre",
+		"body": "echo '<pre>'; print_r($query); '</pre>';"
+	},
+
+	"Crear widget":{
+		"prefix": "widget",
+		"body": [
+			"\n/*\nWidget Name: 111Studio Widget - $1\nDescription: $1\nAuthor: Telmo Ramirez\nAuthor URI: www.111.com.ec\n*/",
+			"\n/**\n*A basic contact form widget.\n*\n*class $3\n*/",
+			"\nclass $3 extends SiteOrigin_Widget{",
+			"\n\tfunction __construct(){",
+			"\t\tparent::__construct(",
+			"\t\t\t'$5',\n\t\t\t__('111 - $1', '$5'),\n\t\t\tarray(\n\t\t\t\t'description' => __('$1', '$5'),\n\t\t\t\t'help' => __('www.111.com.ec'),\n\t\t\t),\n\t\t\tarray(),\n\t\t\tfalse,\n\t\t\tplugin_dir_path(__FILE__)",
+			"\t\t);",
+			"\t}\n",
+			"\tfunction get_widget_form() {\n\t\treturn array(\n\t\t\t$6\n\t\t);\n\t}\n",
+			"\tpublic function get_template_name($instance){\n\t\treturn 'default';\n\t}\n",
+			"\tpublic function get_template_variables( $instance, $args ) {\n\t\treturn array(\n\t\t\t$7\n\t\t);\n\t}\n",
+			"}\n",
+			"siteorigin_widget_register('$5', __FILE__, '$3');"
+		],
+		"description": "Estructura para crear widget de siteorigin."
+	},
+
+	"widget texto":{
+		"prefix": "wtext",
+		"body": [
+			"'$1' => array(\n\t'type' => 'text',\n\t'label' => __( '$2', 'so-widgets-bundle' ),\n),",
+		],
+		"description": "Widgte para crear input de texto."
+	},
+	"widget imagen":{
+		"prefix": "wimg",
+		"body": [
+			"'$1' => array(\n\t'type' => 'media',\n\t'label' => __( '$2', 'so-widgets-bundle' ),\n),",
+		],
+		"description": "Widget para crear input para imagen."
+	},
+	"widget parrafo":{
+		"prefix": "wtinymce",
+		"body": [
+			"'$1' => array(\n\t'type' => 'tinymce',\n\t'label' => __( '$2', 'so-widgets-bundle' ),\n),",
+		],
+		"description": "Widget para crear input de text-area enriquecido."
+	},
+	"widget tab":{
+		"prefix": "wtabs",
+		"body": [
+			"'$1' => array(\n\t'type' => 'repeater',\n\t'label' => __( '$2', 'so-widgets-bundle' ),\n\t'item_label' => array(\n\t\t'selector' => \"[id*='tabs-title']\",\n\t\t'update_event' => 'change',\n\t\t'value_method' => 'val'\n\t),\n\t'fields' => array(\n\t\t$3\n\t)\n),",
+		],
+		"description": "Widget para crear inputs en tabs."
+	},
+	"widget select":{
+		"prefix": "wselect",
+		"body": [
+			"'$1' => array(\n\t'type' => 'select',\n\t'label' => __( '$2', 'so-widgets-bundle' ),\n\t'default' => '$4',\n\t'options' => array(\n\t\t'$3' => __('$4', 'widget-form-fields-text-domain'),\n\t)\n);",
+		],
+		"description": "Widget para crear inputs de tipo select."
+	},
+
+	"dd de prueba":{
+		"prefix": "ddp",
+		"body": "dd('Prueba');",
+		"description": "dd de prueba dd('Prueba')"
+	},
+    "arrow function":{
+		"prefix": "afn",
+		"body": "fn($$x) => $$x",
+		"description": "arrow function fn($x) => $x + $y"
+	},
+    "callback function":{
+		"prefix": "cfn",
+		"body": "function ($$x) {\n\treturn $$x;\n}",
+		"description": "arrow function fn($x) => $x + $y"
+	},
+}

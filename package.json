@@ -1,0 +1,36 @@
+{
+    "name": "trsnippet",
+    "displayName": "trSnippet",
+    "description": "snippets",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.76.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets-php.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets-js-ts.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets-js-ts.code-snippets"
+            },
+            {
+                "language": "dart",
+                "path": "./snippets/snippets-dart.code-snippets"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/snippets-python.code-snippets"
+            }
+        ]
+    }
+}

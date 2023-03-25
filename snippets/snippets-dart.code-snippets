@@ -1,0 +1,16 @@
+{
+    "Arrow function": {
+		"prefix": "afn",
+		"body": [
+			"($1) => $2",
+		],
+		"description": "función flecha"
+	},
+	"callback function": {
+		"prefix": "cfn",
+		"body": [
+			"( $1 ){\n\t$2\n}",
+		],
+		"description": "función para callback"
+	}
+}

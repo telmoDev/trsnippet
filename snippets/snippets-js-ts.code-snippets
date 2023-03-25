@@ -1,0 +1,37 @@
+{
+    "Print to console": {
+		"prefix": "cnl",
+		"body": "console.log($1)",
+		"description": "Log output to console"
+	},
+    "selector jquery" :{
+		"prefix": "jq",
+		"body": "$('$1').$2('$3');"
+	},
+
+	"selector jquery con funcion" :{
+		"prefix": "jqf",
+		"body": "$('$1').$2(function (e) {$3});"
+	},
+	"ajax moderno":{
+		"prefix": "fet",
+		"body": [
+			"fetch('$1',{",
+			"\tmethod:'$2',",
+			"\tbody:$3",
+			"})",
+			".then(res => {\n\t$4",
+			"})"
+		]
+	},
+    "arrow function":{
+		"prefix": "afn",
+		"body": "($x) => $x",
+		"description": "arrow function fn($x) => $x + $y"
+	},
+    "callback function":{
+		"prefix": "cfn",
+		"body": "function ($x) {\n\treturn $x\n}",
+		"description": "arrow function fn($x) => $x + $y"
+	},
+}
