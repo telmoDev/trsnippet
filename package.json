@@ -3,6 +3,11 @@
     "displayName": "trSnippet",
     "description": "snippets customs",
     "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/telmoDev/trsnippet" 
+    },
     "engines": {
         "vscode": "^1.76.0"
     },
