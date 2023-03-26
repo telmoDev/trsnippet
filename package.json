@@ -1,7 +1,7 @@
 {
     "name": "trsnippet",
     "displayName": "trSnippet",
-    "description": "snippets",
+    "description": "snippets customs",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.76.0"
