@@ -1,9 +1,11 @@
 {
     "name": "trsnippet",
-    "displayName": "trSnippet",
+    "displayName": "TRSnippet",
     "description": "snippets customs",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
+    "publisher": "TRSnippet",
+    "icon": "images/logo-trsnippet.jpg",
     "repository": {
         "type": "git", 
         "url": "https://github.com/telmoDev/trsnippet" 
