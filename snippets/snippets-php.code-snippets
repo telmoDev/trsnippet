@@ -75,4 +75,14 @@
 		"body": "function ($$x) {\n\treturn $$x;\n}",
 		"description": "arrow function fn($x) => $x + $y"
 	},
+	"mount function":{
+		"prefix": "mfn",
+		"body": "public function mount($1) {\n\t$2\n}",
+		"description": "mount function by Livewire"
+	},
+	"updated function":{
+		"prefix": "ufn",
+		"body": "public function updated($$name, $$value) {\n\t$1\n}",
+		"description": "updated function by Livewire"
+	},
 }

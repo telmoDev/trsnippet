@@ -27,15 +27,27 @@ Language support: PHP, Python, Dart, JavaScript and TypeScript.
 - Callback function
 
 	>prefix: cfn
+
 	>function ($x) { return $x; }
 
 
 - dd by Larabel
 
 	>prefix: ddp
+
 	>dd('Prueba');
 
-  
+- Mount function by Livewire
+
+	>prefix: mfn
+
+	>public function mount() {&nbsp;&nbsp;&nbsp;&nbsp;}
+
+- Updated function by Livewire
+
+	>prefix: ufn
+
+	>public function updated($name, $value) {&nbsp;&nbsp;&nbsp;&nbsp;}
 
 ## Python
 
@@ -65,15 +77,13 @@ Language support: PHP, Python, Dart, JavaScript and TypeScript.
 - Callback function
 
 	>prefix: cfn
+
 	>function (v) { v }
 
 - Fetch
 	>prefix: fet
 	
-	>fetch('',{
-method:''
-,body:
-}).then(res  => {  })
+	>fetch('',{method:'',&nbsp;&nbsp;&nbsp;&nbsp;body:&nbsp;&nbsp;&nbsp;&nbsp;}).then(res&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;})
   
  - Selector
 
